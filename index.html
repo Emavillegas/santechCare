@@ -24,6 +24,7 @@
                     <li><a class="nav-link" href="#services">About</a> </li>
                     <li><a  class="nav-link" href="#features">Gadgets</a> </li>
                     <li><a  class="nav-link" href="#subscribe">Contact</a> </li>
+                    <li><button class="log-in">Log in</button></li>
                 </ul>
             <a href="#"><img class="logo" src="./img/logo-white.png" alt="logo"></a>
              <!-- menu hamburger -->
@@ -57,6 +58,89 @@
          </div>
 
     </header>
+
+  <h1 class="form">Get Cover and Be Relaxed</h1>
+  <form id="purchaseForm" action="submit_form.php" method="post">
+    <label for="productType">Product Type:</label>
+    <select id="productType" name="productType">
+      <option value="newPurchase">New Purchase</option>
+      <option value="oldPurchase">Old Purchase</option>
+    </select><br>
+
+    <label for="userID">Set your User ID:</label>
+    <input type="text" id="userID" name="userID" maxlength="6"><br>
+
+    <label for="password">Set your Password:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br>
+
+    <label for="middleName">Middle Name:</label>
+    <input type="text" id="middleName" name="middleName"><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <label for="productCategory">Select Product Category:</label>
+    <select id="productCategory" name="productCategory">
+      <option value="gadgets">Gadgets</option>
+      <option value="electronics">Electronics</option>
+      <option value="personalAppliance">Personal Appliance</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label for="brandName">Enter Brand Name:</label>
+    <input type="text" id="brandName" name="brandName"><br>
+
+    <label for="billValue">Product Bill Value:</label>
+    <input type="text" id="billValue" name="billValue"><br>
+
+    <label for="purchaseDate">Purchase Date:</label>
+    <input type="date" id="purchaseDate" name="purchaseDate"><br>
+
+    <label for="invoiceUpload">Invoice Upload:</label>
+    <input type="file" id="invoiceUpload" name="invoiceUpload"><br>
+
+    <label for="serialNumber">Product Serial Number:</label>
+    <input type="text" id="serialNumber" name="serialNumber"><br>
+
+    <label for="contact">Contact:</label>
+    <input type="tel" id="contact" name="contact"><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="city1">City 1</option>
+      <option value="city2">City 2</option>
+      <option value="city3">City 3</option>
+    </select><br>
+
+    <label for="state">State:</label>
+    <select id="state" name="state">
+      <option value="state1">State 1</option>
+      <option value="state2">State 2</option>
+      <option value="state3">State 3</option>
+    </select><br>
+
+    <label for="zipCode">Zip Code:</label>
+    <input type ="text" id="zipCode" name="zipCode"><br>
+
+    <label for="referralCode">Referral Code (if any):</label>
+    <input type="text" id="referralCode" name="referralCode"><br>
+
+    <label for="coverValue">Cover Value to Pay:</label>
+    <input type="text" id="coverValue" name="coverValue"><br>
+
+    <label for="captcha">Captcha Code:</label>
+    <input type="text" id="captcha" name="captcha"><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+
 
     <!-- general data -->
 
@@ -348,7 +432,7 @@
                 <img src="./img/info-container2.jpg" alt="">
             </div>
             
-            <button>GIVING YOU AN EXAMPLE</button>
+            <button id="example">GIVING YOU AN EXAMPLE</button>
 
          
 
@@ -366,10 +450,10 @@
                         <li>Projector</li>
                         <li>Digital Camera</li>
                         <li>CCTV Camera</li>
-                        <li>Speakers</li>
+                        <li>Speakers</li> 
                     </ul>
                 </div>
-                <div>
+                 <div>
                     <img src="./img/categories/categories-television.jpg" alt="">
                     <h3 class="categories-title">Electronic Appliances</h3>
                     <ul class="categories-list">
@@ -412,6 +496,31 @@
             </div>
 
         </div>
+        <section class="example-popup-container">
+            <div class="example-popup popup1 hidden ">
+                <div class="popup-text ">
+                  <h2>Giving you an example:</h2>
+                  <p>If you have recently purchased a mobile phone and you have mistakenly lost it then where you will
+                    go? You will be hopeless because you lost your product and savings too just in a minute. You
+                    invested on your product after waiting for a long time to get it but now empty hand.
+                    Now, if you had purchased a product care plan from “DigiCare” earlier then it will be a not any big
+                    problem for you, only you have to raise the claim from your user dashboard and rest we will took care
+                    of.
+                    Still you’re not too late; just get your care plan for any product whether it’s New or Old Purchase</p>
+                    <h3>What Santech Care is doing?</h3>
+                  <ul>
+                    <li>Fastest track record of care amount release</li>
+                    <li>Upto 100% care for your any category of product.</li>
+                    <li>Impressive and permanent solutions with customer satisfaction</li>
+                    <li>Give protection and security of your valuable purchase</li>
+                    <li>Refer & Earn programme for all registered users</li>
+                  </ul>
+                  <button class="example-ready">OK</button>
+                </div>
+                
+        </section>
+
+
 </section>
 
 <!-- testimonials section -->
@@ -457,7 +566,7 @@
         <a class="footer-link" href="#">Privacy Policy</a>
         <a class="footer-link" href="#">Payment Policy</a>
         <a class="footer-link" href="#">Join Team</a>
-        <a class="footer-link" href="#">General Partner</a>
+        <a class="footer-link" href="#">Channel Partner</a>
         <a class="footer-link" href="#">Corporate Offices</a>
         <a class="footer-link" href="#">Sales Contact</a>
         <a class="footer-link" href="#">User Login</a>

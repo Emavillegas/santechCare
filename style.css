@@ -240,6 +240,54 @@ nav.scroll .nav-link::before {
   }
   
  
+
+  /* formulario */
+
+  h1.form {
+    text-align: center;
+  }
+  
+  #purchaseForm {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    height: 35px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
   
 
 
@@ -610,7 +658,7 @@ section.information-container{
     
 }
 
-.information-container button{
+#example{
     width: 200px;
     border-radius: 10px;
     padding: 10px;
@@ -645,6 +693,92 @@ section.information-container{
     padding: 10px;
     margin-top: 10px;
 }
+
+/* Giving you an example popUP */
+
+
+
+
+.example-popup{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+     
+    
+}
+
+.popup-text{
+    width: auto;
+    max-width: 540px;
+    min-width: 250px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    color: #000;
+    overflow-y: scroll;
+   
+}
+
+
+.example-popup h2{
+    color: #2C4A9A;
+    font-size:25px;
+    margin: 0px 0px 10px 0px;
+    text-align: justify;
+    max-width: 540px;
+}
+.example-popup h3{
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px 0 10px 0;
+    color: #2C4A9A;
+
+}
+
+.example-popup ul{
+    margin: 5px 0 0 0;
+}
+
+.example-popup li{
+    padding: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.example-ready{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+    background-color: #28316F;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.example-ready:hover{
+    background-color: #2C4A9A;
+    transition: .4s;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
 
 /* testimonials */
 

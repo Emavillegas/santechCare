@@ -30,3 +30,23 @@ setInterval(()=>{
 //         counter = 1;
 //     }
 // });
+
+
+
+// giving you an example
+
+const buttonPopUp = document.querySelector('#example');
+const popUpArticle = document.querySelector('.popup1');
+const buttonOk = document.querySelector('.example-ready');
+
+
+
+console.log(buttonPopUp);
+
+buttonPopUp.addEventListener('click',() => {
+    popUpArticle.classList.remove('hidden');
+})
+
+buttonOk.addEventListener('click',() => {
+    popUpArticle.classList.add('hidden');
+})
