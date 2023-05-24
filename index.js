@@ -50,3 +50,8 @@ buttonPopUp.addEventListener('click',() => {
 buttonOk.addEventListener('click',() => {
     popUpArticle.classList.add('hidden');
 })
+
+
+
+
+
