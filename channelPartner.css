@@ -1,3 +1,28 @@
+
+.container-total{
+  display: flex;
+}
+
+.container-total header{
+  width: 50%;
+}
+
+
+#nav{
+  max-width: 900px;
+}
+
+.text-opening h1{
+  font-size: 45px;
+}
+
+
+
+.navbar-list{
+  align-items: center;
+}
+
+
 .channel-opening {
     background-image:linear-gradient(0deg, rgba(0,0,0,0.4)0%, rgba(0,0,0,0.5)100%), url(./img/channel-partner/channelPartner.jpg);
     background-size: cover;
@@ -15,15 +40,8 @@
 /* form con captcha */
 
 .container-capcha {
-    width: 32em;
     background-color: #ffffff;
-    padding: 5em;
     border-radius: 0.6em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.25);
   }
   .wrapper {
     display: flex;
@@ -47,12 +65,12 @@
     font-family: "Roboto Mono", monospace;
     font-size: 1.05em;
     width: 100%;
-    padding: 1em 0.7em;
     border: 1px solid #000000;
     border-radius: 0.4em;
   }
   button#submit-button {
-    width: 100%;
+    width: 50%;
+    margin: auto;
     background-color: #8052ec;
     color: #ffffff;
     font-size: 1.5em;
@@ -98,96 +116,33 @@
     color: var(--cnegro);
   }
   
-  /* ---- FORMULARIO ---- */
-  
-  .form {
-    /* border: 3px solid green; */
-    border-top: 2px solid var(--cnegro);
-    max-width: 400px;
-    padding: 30px 50px;
+
+  /* form-ema */
+
+  .container-form{
     margin: auto;
-    margin-top: 10px;
-    background: linear-gradient(
-      0deg,
-      var(--cfondoForm1) 0%,
-      var(--cfondoForm2) 50%
-    );
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    box-shadow: 0 2px 4px rgba(208, 17, 17, 0.5); /* Sombra más pronunciada */
+    padding: 20px;
   }
-  
-  .form-titulo {
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-    letter-spacing: 3px;
+
+  #form-channelPartner{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
   }
-  
-  .form-input {
-    margin-bottom: 30px;
-  }
-  
-  .form-input label {
-    display: block;
-    margin-top: 10px;
-    font-size: 15px;
-    color: var(--ctexto);
-  }
-  
-  .form-input input {
+
+  .form-group{
     width: 100%;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 1px solid var(--ctexto);
-  }
-  
-  .form-input input:focus + label {
-    font-weight: bold;
-    color: var(--cnegro);
-  }
-  
-  .form-termsAndConditions {
-    margin-left: 15px;
-    position: relative;
-    color: var(--ctexto);
-    font-size: 13px;
-  }
-  
-  .form-termsAndConditions label::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    border: 1px solid var(--cnegro);
-    position: absolute;
-    left: -14px;
-  }
-  
-  .form-boton input {
-    background: var(--cnegro);
-    color: var(--cblanco);
-    padding: 10px 50px;
-    font-size: 25px;
-    display: block;
+    max-width: 350px;
+    padding: 0px 20px;
     margin: auto;
-    margin-top: 40px;
-    border: none;
   }
-  
-  .form-boton input:hover {
-    background: var(--ctextoDark);
-    transition: 0.5s;
-  }
-  
-  .mensajeError {
-    color: var(--error);
-    margin-top: 0px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  
-  .mensajeCorrecto {
+
+  .container-form h2{
     text-align: center;
-    font-weight: bold;
+    margin-bottom: 25px;
   }
+

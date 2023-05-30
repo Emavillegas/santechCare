@@ -24,7 +24,7 @@
                     <li><a class="nav-link" href="#services">About</a> </li>
                     <li><a  class="nav-link" href="#features">Gadgets</a> </li>
                     <li><a  class="nav-link" href="#subscribe">Contact</a> </li>
-                    <li><button class="log-in">Log in</button></li>
+                    <li><a class="log-in">Log in</a></li>
                 </ul>
             <a href="#"><img class="logo" src="./img/logo-white.png" alt="logo"></a>
              <!-- menu hamburger -->
@@ -59,86 +59,132 @@
 
     </header>
 
-  <h1 class="form">Get Cover and Be Relaxed</h1>
-  <form id="purchaseForm" action="submit_form.php" method="post">
-    <label for="productType">Product Type:</label>
-    <select id="productType" name="productType">
-      <option value="newPurchase">New Purchase</option>
-      <option value="oldPurchase">Old Purchase</option>
-    </select><br>
+    <div class="container-form-principal">
 
-    <label for="userID">Set your User ID:</label>
-    <input type="text" id="userID" name="userID" maxlength="6"><br>
+    
+        <h1 class="form">Get Cover and Be Relaxed</h1>
+        <form id="purchaseForm" action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="productType">Product Type:</label>
+                <select id="productType" name="productType">
+                <option value="newPurchase">New Purchase</option>
+                <option value="oldPurchase">Old Purchase</option>
+                </select><br>
+            </div>
 
-    <label for="password">Set your Password:</label>
-    <input type="password" id="password" name="password"><br>
+            <div class="form-group">
+                <label for="userID">Set your User ID:</label>
+                <input type="text" id="userID" name="userID" maxlength="6"><br>
+            </div>
 
-    <label for="email">Email ID:</label>
-    <input type="email" id="email" name="email"><br>
+            <div class="form-group">
+                <label for="password">Set your Password:</label>
+                <input type="password" id="password" name="password"><br>
+            </div>
 
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName"><br>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email"><br>
+            </div>
 
-    <label for="middleName">Middle Name:</label>
-    <input type="text" id="middleName" name="middleName"><br>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName"><br>
+            </div>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName"><br>
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName"><br>
+            </div>
 
-    <label for="productCategory">Select Product Category:</label>
-    <select id="productCategory" name="productCategory">
-      <option value="gadgets">Gadgets</option>
-      <option value="electronics">Electronics</option>
-      <option value="personalAppliance">Personal Appliance</option>
-      <option value="other">Other</option>
-    </select><br>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName"><br>
+            </div>
 
-    <label for="brandName">Enter Brand Name:</label>
-    <input type="text" id="brandName" name="brandName"><br>
+            <div class="form-group">
+                <label for="productCategory">Select Product Category:</label>
+                <select id="productCategory" name="productCategory">
+                <option value="gadgets">Gadgets</option>
+                <option value="electronics">Electronics</option>
+                <option value="personalAppliance">Personal Appliance</option>
+                <option value="other">Other</option>
+                </select><br>
+            </div>
 
-    <label for="billValue">Product Bill Value:</label>
-    <input type="text" id="billValue" name="billValue"><br>
+            <div class="form-group">
+                
+                <label for="brandName">Enter Brand Name:</label>
+                <input type="text" id="brandName" name="brandName"><br>
+            </div>
 
-    <label for="purchaseDate">Purchase Date:</label>
-    <input type="date" id="purchaseDate" name="purchaseDate"><br>
+            <div class="form-group">
+                <label for="billValue">Product Bill Value:</label>
+                <input type="text" id="billValue" name="billValue"><br>
+            </div>
 
-    <label for="invoiceUpload">Invoice Upload:</label>
-    <input type="file" id="invoiceUpload" name="invoiceUpload"><br>
+            <div class="form-group">
+                <label for="purchaseDate">Purchase Date:</label>
+                <input type="date" id="purchaseDate" name="purchaseDate"><br>
+            </div>
 
-    <label for="serialNumber">Product Serial Number:</label>
-    <input type="text" id="serialNumber" name="serialNumber"><br>
+            <div class="form-group">
+                <label for="invoiceUpload">Invoice Upload:</label>
+                <input type="file" id="invoiceUpload" name="invoiceUpload"><br>
+            </div>
 
-    <label for="contact">Contact:</label>
-    <input type="tel" id="contact" name="contact"><br>
+            <div class="form-group">
+                <label for="serialNumber">Product Serial Number:</label>
+                <input type="text" id="serialNumber" name="serialNumber"><br>
+            </div>
 
-    <label for="country">Country:</label>
-    <select id="country" name="country">
-      <option value="city1">City 1</option>
-      <option value="city2">City 2</option>
-      <option value="city3">City 3</option>
-    </select><br>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact"><br>
+            </div>
 
-    <label for="state">State:</label>
-    <select id="state" name="state">
-      <option value="state1">State 1</option>
-      <option value="state2">State 2</option>
-      <option value="state3">State 3</option>
-    </select><br>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                <option value="city3">City 3</option>
+                </select><br>
+            </div>
 
-    <label for="zipCode">Zip Code:</label>
-    <input type ="text" id="zipCode" name="zipCode"><br>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                <option value="state1">State 1</option>
+                <option value="state2">State 2</option>
+                <option value="state3">State 3</option>
+                </select><br>
+            </div>
 
-    <label for="referralCode">Referral Code (if any):</label>
-    <input type="text" id="referralCode" name="referralCode"><br>
+            <div class="form-group">
+                <label for="zipCode">Zip Code:</label>
+                <input type ="text" id="zipCode" name="zipCode"><br>
+            </div>
 
-    <label for="coverValue">Cover Value to Pay:</label>
-    <input type="text" id="coverValue" name="coverValue"><br>
+            <div class="form-group">
+                <label for="referralCode">Referral Code (if any):</label>
+                <input type="text" id="referralCode" name="referralCode"><br>
+            </div>
 
-    <label for="captcha">Captcha Code:</label>
-    <input type="text" id="captcha" name="captcha"><br>
+            <div class="form-group">
+                <label for="coverValue">Cover Value to Pay:</label>
+                <input type="text" id="coverValue" name="coverValue"><br>
+            </div>
 
-    <button type="submit">Submit</button>
-  </form>
+            <div class="form-group">
+                <label for="captcha">Captcha Code:</label>
+                <input type="text" id="captcha" name="captcha"><br>
+            </div>
+
+            <button type="submit">Submit</button>
+            <img class="img-close" src="./img/closeImage.png" alt="closeimage">
+        </form>
+    </div>
 
 
 
@@ -155,7 +201,10 @@
         </div>
         <div class="data">
             <p>TEAM SIZE</p>
-            <p class="number">300+</p>
+            <div class="container-number">
+                <div id="background-number"></div>
+                <p class="number" id="number-data"></p>
+            </div>
         </div>
         <div class="data">
             <p>OPERATIONS</p>
@@ -645,7 +694,7 @@
     <hr class="hr-footer">
 
     <div class="logo-footer">
-        <img src="./img/logo-letusmaintain.png" alt="Company Logo">
+        <img src="./img/logo (1).png" alt="Company Logo">
         <p>Copyright: All rights reserved ©2023</p>
         <div class="links-footer">
             <a class="footer-link" href="#"><img src="./img/icons/icons8-facebook-48.png" alt="facebook"></a>
